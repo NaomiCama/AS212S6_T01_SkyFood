@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TrasferenciaComponent } from './Components/trasferencia/trasferencia.component';
 import { FormsModule } from '@angular/forms';
+import { LandingComponent } from './pages/landing/landing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TrasferenciaComponent
+    TrasferenciaComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
@@ -20,3 +22,4 @@ import { FormsModule } from '@angular/forms';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+  

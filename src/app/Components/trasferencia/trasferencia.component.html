@@ -1,5 +1,3 @@
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-6 offset-md-3">
@@ -8,11 +6,10 @@
                     <h4>Billetera Digital</h4>
                 </div>
                 <div class="card-body">
-                    <!-- Account Info -->
                     <div class="mb-3">
                         <h5>Información de la cuenta</h5>
-                        <p><strong>Dirección:</strong> {{ account.address }}</p>
-                        <p><strong>Saldo:</strong> {{ account.balance }} ETH</p>
+                        <p class="text-light"><strong>Dirección:</strong> {{ account.address }}</p>
+                        <p class="text-light"><strong>Saldo:</strong> {{ account.balance }} ETH</p>
                     </div>
 
                     <!-- Connect to MetaMask -->
@@ -23,12 +20,12 @@
                     <!-- Transaction Form -->
                     <form (ngSubmit)="sendTransaction()">
                         <div class="form-group">
-                            <label for="recipientAddress">Dirección del destinatario</label>
+                            <label for="recipientAddress" class="text-light">Dirección del destinatario</label>
                             <input type="text" class="form-control" id="recipientAddress" [(ngModel)]="recipientAddress"
                                 name="recipientAddress" required>
                         </div>
                         <div class="form-group">
-                            <label for="amount">Cantidad en ETH</label>
+                            <label for="amount" class="text-light">Cantidad en ETH</label>
                             <input type="number" class="form-control" id="amount" [(ngModel)]="amount" name="amount"
                                 required>
                         </div>

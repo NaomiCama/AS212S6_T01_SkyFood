@@ -167,5 +167,6 @@ export class TrasferenciaComponent implements OnInit {
   logoutWeb3() {
     this.web3js = null;
     this.account = new AccountWeb3Model();
+    this.router.navigate(['/']);
   }
 }
