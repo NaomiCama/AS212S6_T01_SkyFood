@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  app:
+    image: naomicama/skyfood:latest
+    container_name: skyfood
+    ports:
+      - "4200:4200"
+    #environment:
+    #  MY_ENVIRONMENT: ${MY_ENVIRONMENT}
+    #volumes:
+    #  - /ruta/en/el/host:/ruta/en/el/contenedor
