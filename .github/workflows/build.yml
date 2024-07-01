@@ -27,4 +27,4 @@ jobs:
         run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/skycontract:latest .
   
       - name: Push Docker image to Docker Hub
-        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/skyContract:latest
+        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/skycontract:latest
